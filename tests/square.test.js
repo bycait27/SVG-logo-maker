@@ -1,4 +1,4 @@
-const Square = require('/Users/caitlinash/Desktop/coding-challenges/SVG-logo-maker/lib/circle.js');
+const Square = require('/Users/caitlinash/Desktop/coding-challenges/SVG-logo-maker/lib/square.js');
 
 describe('Square', () => {
     test('should render a logo in the shape of a square.', () => {
