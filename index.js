@@ -3,10 +3,10 @@ const inquirer = require('inquirer');
 // import fs module
 const fs = require('fs');
 // import shape classes
-const Shapes = require('');
-const Circle = require('');
-const Square = require('');
-const Triangle = require('');
+const Shapes = require('/Users/caitlinash/Desktop/coding-challenges/SVG-logo-maker/lib/shapes.js');
+const Circle = require('/Users/caitlinash/Desktop/coding-challenges/SVG-logo-maker/lib/circle.js');
+const Square = require('/Users/caitlinash/Desktop/coding-challenges/SVG-logo-maker/lib/square.js');
+const Triangle = require('/Users/caitlinash/Desktop/coding-challenges/SVG-logo-maker/lib/triangle.js');
 
 // add inquirer prompts
 inquirer
@@ -34,18 +34,21 @@ inquirer
         },
     ])
     .then((response) => {
+        // declare rendered shape of each type
         const newCircle = new Circle().render();
         const newSquare = new Square().render();
         const newTriangle = new Triangle().render();
 
+        // declare template for contents of file
         let svgTemplate = `
         <svg width="300" height="200">
 
-        // fix this
+        // code stops reading after newCircle...fix this
         ${newCircle || newTriangle || newSquare}
 
         </svg>
         `;
+        // creates a file named 'logo.svg' with the logo generated based on the user's input
         fs.writeFile('logo.svg', svgTemplate, err => {
             err ? console.error(err) : console.log('Generated logo.svg');
         })
