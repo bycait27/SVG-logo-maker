@@ -2,18 +2,21 @@
 
 ## Description
 
-<!-- Add description here -->
+This is a program built with Node.js, and npm inquirer. It generates a SVG file that contains a logo based on input from the user via the terminal. This project was built to make it easier for the user to develop a logo for their brand. While building this program, I faced a lot of complications and had some difficulty getting the logo to generate properly. I would like to improve upon this program in the future to make it function better!
 
 ## Installation
 
 Install npm inquirer in order to run the prompts.
 
+Install npm jest in order to run the tests.
+
 ## Usage
 
-<!-- Add usage here -->
+Once the user has installed the appropriate packages, they will type "node index.js" into the terminal. This will cue the program to start and the prompts will appear one by one. Once the user has submitted all their responses, they should see a message in the terminal stating "Generated logo.svg," indicating that their SVG file and logo was successfully generated. The generated file will have the name of "logo.svg," which will be listed among the files in their current folder. The user can right click on the SVG file and "Open Preview" to see their generated SVG logo!
 
 <!-- add tutorial link -->
-[tutorial]() 
+[tutorial](https://drive.google.com/file/d/1NgcE3vPAXoyMvN_GYyZSoDAWduuFGl10/view) 
+![mock logo](assets/images/10-oop-homework-demo.png)
 
 ## Credits
 
